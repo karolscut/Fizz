@@ -20,7 +20,19 @@ public class FizzService {
 		return dividend % divisor == 0;
 	}
 
-	public String print(int n) {
+	public String getFizzResult(int n) {
+		String result = String.valueOf(n);
+		if (isDividable(n, 3) && isDividable(n, 5)) {
+			result = Constants.FIZZ_BUZZ;
+		} else if (isDividable(n, 3)) {
+			result = Constants.FIZZ;
+		} else if (isDividable(n, 5)) {
+			result = Constants.BUZZ;
+		}
+		return result;
+	}
+	
+	public String getFizzResult1(int n) {
 		String result = String.valueOf(n);
 		if (isDividable(n, 3) && isDividable(n, 5)) {
 			result = Constants.FIZZ_BUZZ;
