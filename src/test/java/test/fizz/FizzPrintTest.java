@@ -1,6 +1,6 @@
 package test.fizz;
 
-import fizz.FizzService;
+import fizz.simple.FizzService;
 
 public class FizzPrintTest {
 	public static void main(String[] args) {
